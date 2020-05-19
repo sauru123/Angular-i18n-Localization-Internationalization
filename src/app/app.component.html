@@ -7,5 +7,7 @@
 </h3>
 <p>This text wont change & It will remain same in all languages</p>
 <hr />
-
+<ng-container *ngFor="let language of languageList">
+  <a href="/{{language.code}}/"><button class="button">{{language.label}}</button></a>
+</ng-container>
 
